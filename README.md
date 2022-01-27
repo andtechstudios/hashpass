@@ -10,13 +10,13 @@ When proper authorization/authentication controls are not available, use this si
 
 For example
 ```
-password
+secret
 ```
 
 3. Obtain the SHA1 hash of this pass phrase. (You can use [this tool](https://passwordsgenerator.net/sha1-hash-generator/))
 
 ```
-5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+fc683cd9ed1990ca2ea10b84e5e6fba048c24929
 ```
 
 4. Create a directory. Use the SHA1 hash from earlier as the name.
