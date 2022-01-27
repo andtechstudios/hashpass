@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha1.js"></script>
+  <script>
+    function checkFileExist(urlToFile) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('HEAD', urlToFile, false);
+      xhr.send();
+      
+      if (xhr.status == "404") {
+          return false;
+      } else {
+          return true;
+      }
+    }
+
+    do
+    {
+      var key = prompt("This resource requires a pass phrase to access:", "");
+      var path = CryptoJS.SHA1(key);
+
+      var exists = checkFileExist(path);
+    }
+    while (!exists);
+
+    window.location.href = path;
+  </script>
+</body>
+</html>
