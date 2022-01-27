@@ -1,7 +1,7 @@
 # Hashpass
 *Minimalist "password" feature for static sites*
 
-When true authorization/authentication controls are not available, use this simple technique to secure your content.
+When proper authorization/authentication controls are not available, use this simple technique to secure your content.
 
 # Usage
 
