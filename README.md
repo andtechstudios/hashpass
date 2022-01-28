@@ -24,3 +24,8 @@ Try **Hashpass** [here](https://andtechstudios.github.io/hashpass). The passphra
 
 # References
 * [iOS Continuous Integration with GitLab CI, Fastlane & OTA Installation](https://medium.com/@leszek.s/ios-continuous-integration-with-gitlab-ci-fastlane-and-ota-installation-from-gitlab-pages-f312e07ab06e)
+* [chrissy-dev/protected-github-pages](https://github.com/chrissy-dev/protected-github-pages)
+
+---
+
+> Credit to [@crissy-dev](https://github.com/chrissy-dev/protected-github-pages) for using `robots` tags
