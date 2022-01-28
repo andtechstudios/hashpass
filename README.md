@@ -1,5 +1,5 @@
 # Hashpass
-*Minimalist "password" feature for static sites*
+*Minimalist "passphrase" feature for static sites*
 
 When proper authorization/authentication controls are not available, use this simple technique to secure your content.
 
