@@ -23,13 +23,17 @@
 				}
 
 				if (input === null) {
-					open(location, '_self').close();
 					break;
 				}
 
 				var pwd = location.href.replace(/\/[^\/]+?\.[^\/]+?$/, '/');
 				var path = pwd + CryptoJS.SHA1(input);
 				if (checkFileExist(path)) {
+					window.location.href = path;
+					break;
+				}
+
+				if (checkFileExist(path + "/index.html")) {
 					window.location.href = path;
 					break;
 				}
