@@ -33,7 +33,8 @@
 					break;
 				}
 
-				if (checkFileExist(path + "/index.html")) {
+				path += "/index.html";
+				if (checkFileExist(path)) {
 					window.location.href = path;
 					break;
 				}
