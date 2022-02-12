@@ -18,8 +18,6 @@
 			while (true)
 			{
 				var input = prompt("This resource requires a passphrase to access:", "");
-				var pwd = location.href.replace(/\/[^\/]+?\.[^\/]+?$/, '/');
-				var path = pwd + input;
 				if (input == "") {
 					continue;
 				}
@@ -29,7 +27,8 @@
 					break;
 				}
 
-				var path = CryptoJS.SHA1(input);
+				var pwd = location.href.replace(/\/[^\/]+?\.[^\/]+?$/, '/');
+				var path = pwd + CryptoJS.SHA1(input);
 				if (checkFileExist(path)) {
 					window.location.href = path;
 					break;
