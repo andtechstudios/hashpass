@@ -14,10 +14,12 @@
 				
 				return xhr.status != "404";
 			}
-
+			
 			while (true)
 			{
 				var input = prompt("This resource requires a passphrase to access:", "");
+				var pwd = location.href.replace(/\/[^\/]+?\.[^\/]+?$/, '/');
+				var path = pwd + input;
 				if (input == "") {
 					continue;
 				}
